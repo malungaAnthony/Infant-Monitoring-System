@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infant Monitoring System</title>
+</head>
+<body>
+    <h1>Infant Monitoring System</h1>
+    <form action="/generate_qr" method="POST">
+        <label for="baby_id">Baby ID:</label>
+        <input type="text" name="baby_id" required><br><br>
+        
+        <label for="parent_id">Parent Email:</label>
+        <input type="email" name="parent_id" required><br><br>
+        
+        <label for="hospital_id">Hospital ID:</label>
+        <input type="text" name="hospital_id" required><br><br>
+        
+        <input type="submit" value="Generate QR Code">
+    </form>
+</body>
+</html>
