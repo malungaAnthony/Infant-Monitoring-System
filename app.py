@@ -56,7 +56,7 @@ def send_qr_to_parents(parent_email, qr_code_path):
     # Set up email parameters
     msg = MIMEMultipart()
     msg['Subject'] = 'Your Baby\'s QR Code'
-    msg['From'] = 'cbyberstack15@gmail.com'
+    msg['From'] = 'karenmalunga860@gmail.com'
     msg['To'] = parent_email
 
     # Attach the QR code image
@@ -68,8 +68,8 @@ def send_qr_to_parents(parent_email, qr_code_path):
     # Send email
     with smtplib.SMTP('smtp.gmail.com', 587) as server:
         server.starttls()
-        server.login('your-email@gmail.com', 'your-password')
-        server.sendmail('hospital@gmail.com', parent_email, msg.as_string())
+        server.login('karenmalunga860@gmail.com', 'ofau bann xneh haky')
+        server.sendmail('anthonymalunga5@gmail.com', parent_email, msg.as_string())
 
 if __name__ == '__main__':
     if not os.path.exists(QR_CODE_PATH):
